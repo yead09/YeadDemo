@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_orange_dark"
-    tools:context="com.example.yead.yeaddemo.fragment.HistoryFragment">
+    tools:context="com.example.yead.yeaddemo.fragment.Fragment8">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"
-
+        android:scaleType="matrix"
+        android:src="@mipmap/pic1"
         />
+
 </FrameLayout>
