@@ -72,10 +72,11 @@ public class MainActivity extends BaseActivity {
             }
 
         });
+
         bt3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-               // toActivity(ListViewActivity.class);
+                // toActivity(ListViewActivity.class);
                 Intent intent = new Intent(v.getContext(),ListViewActivity.class);
                 startActivityForResult(intent,3);
 
@@ -85,15 +86,9 @@ public class MainActivity extends BaseActivity {
             }
 
         });
-
     }
 
-    launch_mode.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                            toActivity(ActivityA.class);
-                        }
-                });
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
