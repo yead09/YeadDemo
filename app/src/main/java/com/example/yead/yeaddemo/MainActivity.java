@@ -19,6 +19,8 @@ public class MainActivity extends BaseActivity {
     private ImageButton bt1;
     private ImageButton bt3;
     private ImageButton bt2;
+    private ImageButton launch_mode;
+
     @OnClick(R.id.bt2)
         public void button2Click(){
         Intent intent = new Intent(this,DialogActivity.class);
@@ -40,9 +42,10 @@ public class MainActivity extends BaseActivity {
     }
 
     private void initialView(){
-        bt2 = (ImageButton) findViewById(R.id.bt2);
+        //bt2 = (ImageButton) findViewById(R.id.bt2);
         bt1 = (ImageButton) findViewById(R.id.bt1);
         bt3 = (ImageButton) findViewById(R.id.bt3);
+        launch_mode = (ImageButton) findViewById(R.id.launch_mode);
 
     }
 
@@ -75,6 +78,7 @@ public class MainActivity extends BaseActivity {
                // toActivity(ListViewActivity.class);
                 Intent intent = new Intent(v.getContext(),ListViewActivity.class);
                 startActivityForResult(intent,3);
+
                 //Intent intent = new Intent (v.getContext(),ListViewActivity.class);
                 //startActivity(intent);
 
@@ -83,6 +87,13 @@ public class MainActivity extends BaseActivity {
         });
 
     }
+
+    launch_mode.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                            toActivity(ActivityA.class);
+                        }
+                });
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
