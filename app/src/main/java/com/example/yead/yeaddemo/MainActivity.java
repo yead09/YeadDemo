@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.example.yead.yeaddemo.bean.Book;
+import com.example.yead.yeaddemo.util.TimerActivity;
 import com.example.yead.yeaddemo.util.UtilLog;
 
 import butterknife.ButterKnife;
@@ -20,6 +21,16 @@ public class MainActivity extends BaseActivity {
     private ImageButton bt3;
     private ImageButton bt2;
     private ImageButton launch_mode;
+
+    @OnClick(R.id.main_timer_anim)
+    public void toAnimation(){
+        toActivity(AnimationActivity.class);
+    }
+
+    @OnClick(R.id.main_timer_bt)
+    public void toTimer() {
+        toActivity(TimerActivity.class);
+    }
 
     @OnClick(R.id.bt2)
         public void button2Click(){
@@ -86,7 +97,21 @@ public class MainActivity extends BaseActivity {
             }
 
         });
+
+        launch_mode.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                toActivity(ActivityA.class);
+
+
+                //Intent intent = new Intent (v.getContext(),ListViewActivity.class);
+                //startActivity(intent);
+
+            }
+
+        });
     }
+
 
 
 
