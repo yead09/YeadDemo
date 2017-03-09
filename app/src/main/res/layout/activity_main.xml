@@ -82,6 +82,7 @@
     </LinearLayout>
 
     <FrameLayout
+        android:id="@+id/main_fl"
         android:layout_below="@id/title_bar"
         android:layout_above="@id/tool_bar"
         android:layout_width="match_parent"
@@ -94,17 +95,37 @@
             android:layout_height="60dp"
             android:text="Timer"
             android:textAllCaps="false"
-            android:textSize="20sp"
+            android:textSize="15sp"
             />
 
         <Button
             android:id="@+id/main_timer_anim"
             android:layout_marginLeft="100dp"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="60dp"
             android:text="Animation"
             android:textAllCaps="false"
-            android:textSize="20sp"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/main_anim"
+            android:layout_marginLeft="200dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Animator"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            />
+        <Button
+            android:id="@+id/main_quiz"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="65dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="Quiz"
+            android:textAllCaps="false"
+            android:textSize="15sp"
             />
 
     </FrameLayout>
