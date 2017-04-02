@@ -7,6 +7,7 @@
     android:background="@android:color/black"
     tools:context="com.example.yead.yeaddemo.MainActivity">
 
+
     <RelativeLayout
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
@@ -23,16 +24,17 @@
             android:gravity="center"
             android:textColor="@color/white"
             />
+
         <ImageButton
+            android:id="@+id/leftbutton"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:background="@android:color/transparent"
-            android:src="@drawable/bt_style"
-            android:layout_marginLeft="12dp"
-            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@android:color/transparent"
 
-            />
+            android:src="@drawable/bt_style" />
         <ImageButton
             android:id="@+id/launch_mode"
             android:layout_width="48dp"
@@ -130,5 +132,110 @@
 
     </FrameLayout>
 
+    <LinearLayout
+            android:id="@+id/hw4"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+           android:layout_marginLeft="-325dp"
+        android:layout_below="@+id/title_bar"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:text="MainActivity"
+                android:background="@color/black"
+                android:textColor="@color/white"
+               android:textAllCaps="false"
+                android:textSize="20sp"
+                />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:text="ViewPagerActivity"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:text="ListViewActivity"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:text="Activity A"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:text="Activity B"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:text="Activity C"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:text="Activity D"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        </LinearLayout>
 
 </RelativeLayout>
